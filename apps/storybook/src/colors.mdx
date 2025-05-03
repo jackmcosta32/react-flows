@@ -1,0 +1,152 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+
+<Meta title="Color Tokens" />
+
+# Color Tokens
+
+## Background Colors
+
+<ColorPalette>
+  <ColorItem
+    title="Primary"
+    subtitle="bg-background"
+    colors={{
+      Default: 'hsl(var(--background))',
+    }}
+  />
+  <ColorItem
+    title="Secondary"
+    subtitle="bg-background-secondary"
+    colors={{
+      Default: 'hsl(var(--background-secondary))',
+    }}
+  />
+  <ColorItem
+    title="Tertiary"
+    subtitle="bg-background-tertiary"
+    colors={{
+      Default: 'hsl(var(--background-tertiary))',
+    }}
+  />
+  <ColorItem
+    title="Invert"
+    subtitle="bg-foreground"
+    colors={{
+      Default: 'hsl(var(--foreground))',
+    }}
+  />
+  <ColorItem
+    title="Brand"
+    subtitle="bg-background-brand"
+    colors={{
+      Default: 'hsl(var(--background-brand))',
+    }}
+  />
+  <ColorItem
+    title="Blur"
+    subtitle="bg-background-blur-{{swatch}}"
+    colors={{
+      Bold: 'hsl(var(--background-blur-bold))',
+      Medium: 'hsl(var(--background-blur-medium))',
+      Subtle: 'hsl(var(--background-blur-subtle))',
+      Modal: 'hsl(var(--background-blur-modal))',
+    }}
+  />
+  <ColorItem
+    title="State"
+    subtitle="bg-background-{{state}}"
+    colors={{
+      Success: 'hsl(var(--background-success))',
+      Warning: 'hsl(var(--background-warning))',
+      Info: 'hsl(var(--background-info))',
+      Error: 'hsl(var(--background-error))',
+    }}
+  />
+</ColorPalette>
+
+## Font Colors
+
+<ColorPalette>
+  <ColorItem
+    title="Primary"
+    subtitle="text-primary"
+    colors={{
+      Default: 'hsl(var(--primary))',
+    }}
+  />
+  <ColorItem
+    title="Secondary"
+    subtitle="text-secondary"
+    colors={{
+      Default: 'hsl(var(--secondary))',
+    }}
+  />
+  <ColorItem
+    title="Tertiary"
+    subtitle="text-tertiary"
+    colors={{
+      Default: 'hsl(var(--tertiary))',
+    }}
+  />
+  <ColorItem
+    title="Invert"
+    subtitle="text-foreground"
+    colors={{
+      Default: 'hsl(var(--foreground))',
+    }}
+  />
+  <ColorItem
+    title="Blur"
+    subtitle="text-blur-{{swatch}}"
+    colors={{
+      Bold: 'hsl(var(--blur-bold))',
+      Medium: 'hsl(var(--blur-medium))',
+      Subtle: 'hsl(var(--blur-subtle))',
+      Modal: 'hsl(var(--blur-modal))',
+    }}
+  />
+  <ColorItem
+    title="State"
+    subtitle="text-{{swatch}}"
+    colors={{
+      Success: 'hsl(var(--success))',
+      Warning: 'hsl(var(--warning))',
+      Info: 'hsl(var(--info))',
+      Error: 'hsl(var(--error))',
+    }}
+  />
+</ColorPalette>
+
+## Stroke Colors
+
+<ColorPalette>
+  <ColorItem
+    title="Primary"
+    subtitle="bg-stroke-primary-{{swatch}}"
+    colors={{
+      Default: 'hsl(var(--stroke-primary))',
+      Subtle: 'hsl(var(--stroke-primary-subtle))',
+      Bold: 'hsl(var(--stroke-primary-bold))',
+    }}
+  />
+  <ColorItem
+    title="Primary"
+    subtitle="bg-stroke-secondary-{{swatch}}"
+    colors={{
+      Subtle: 'hsl(var(--stroke-secondary-subtle))',
+    }}
+  />
+</ColorPalette>
+
+## Overlay Colors
+
+<ColorPalette>
+  <ColorItem
+    title="Primary"
+    subtitle="bg-overlay-{{swatch}}"
+    colors={{
+      Primary: 'hsl(var(--overlay-primary))',
+      Black: 'hsl(var(--overlay-black))',
+    }}
+  />
+</ColorPalette>

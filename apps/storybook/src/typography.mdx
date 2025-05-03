@@ -1,0 +1,15 @@
+import * as TypographyStories from './typography.stories'; 
+import { Canvas, Meta } from '@storybook/blocks';
+
+<Meta of={TypographyStories} />
+
+# Typography
+
+We can use the `typography-{{variant}}` utility classes to apply the design
+system typography to our components. For example, the `typography-d1` utility
+class will apply the specifications seen bellow for the **Display 1** row. 
+
+**P.S.**: We can see the full list of utility classes at the `index.css`
+file.
+
+<Canvas of={TypographyStories.Primary} />
