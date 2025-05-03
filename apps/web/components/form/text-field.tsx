@@ -6,10 +6,10 @@ import {
   FormMessage,
   useFormField,
   FormDescription,
-} from '@workspace/ui/components/form';
+} from "@workspace/ui/components/form";
 
-import { Input } from '@workspace/ui/components/input';
-import { CheckIcon, OctagonAlertIcon } from 'lucide-react';
+import { Input } from "@workspace/ui/components/input";
+import { CheckIcon, OctagonAlertIcon } from "lucide-react";
 
 export interface TextFieldProps extends React.ComponentProps<typeof Input> {
   name: string;
@@ -43,17 +43,16 @@ export const TextField = ({
           <FormControl>
             <Input
               {...rest}
-              value={field.value ?? ''}
+              value={field.value ?? ""}
               onChange={field.onChange}
               placeholder={placeholder}
-              data-hide-status={hideStatus}
             >
               {fieldState.isDirty && !hideStatus && (
-                <span className="flex items-center absolute right-4 top-0 bottom-0">
+                <span className="size-9 flex items-center justify-center rounded-md mr-2">
                   {fieldState.invalid ? (
-                    <OctagonAlertIcon size={14} className="text-error" />
+                    <OctagonAlertIcon size={14} />
                   ) : (
-                    <CheckIcon size={14} className="text-success" />
+                    <CheckIcon size={14} />
                   )}
                 </span>
               )}
