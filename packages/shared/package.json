@@ -1,0 +1,26 @@
+{
+  "name": "@workspace/shared",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "lint": "eslint . --max-warnings 0"
+  },
+  "dependencies": {
+    "date-fns": "^4.1.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@turbo/gen": "^2.4.2",
+    "@types/node": "^20",
+    "@workspace/eslint-config": "workspace:*",
+    "@workspace/typescript-config": "workspace:*",
+    "typescript": "^5.7.3"
+  },
+  "exports": {
+    "./utils/*": "./src/utils/*.js",
+    "./types/*": "./src/types/*.js",
+    "./models/*": "./src/models/*.js",
+    "./constants/*": "./src/constants/*.js"
+  }
+}
