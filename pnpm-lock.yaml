@@ -32,12 +32,18 @@ importers:
 
   apps/storybook:
     dependencies:
+      '@hookform/resolvers':
+        specifier: ^3.10.0
+        version: 3.10.0(react-hook-form@7.56.1(react@19.0.0))
       '@tailwindcss/vite':
         specifier: ^4.0.14
         version: 4.1.5(vite@6.3.4(@types/node@20.17.19)(jiti@2.4.2)(lightningcss@1.29.2)(terser@5.39.0))
       '@tanstack/react-query':
         specifier: ^5.69.0
         version: 5.75.1(react@19.0.0)
+      '@workspace/presentation':
+        specifier: workspace:*
+        version: link:../../packages/presentation
       '@workspace/ui':
         specifier: workspace:*
         version: link:../../packages/ui
@@ -193,6 +199,52 @@ importers:
       typescript-eslint:
         specifier: ^8.24.1
         version: 8.24.1(eslint@9.26.0(jiti@2.4.2))(typescript@5.7.3)
+
+  packages/presentation:
+    dependencies:
+      '@hookform/resolvers':
+        specifier: ^3.10.0
+        version: 3.10.0(react-hook-form@7.56.1(react@19.0.0))
+      '@workspace/ui':
+        specifier: workspace:*
+        version: link:../ui
+      lucide-react:
+        specifier: ^0.475.0
+        version: 0.475.0(react@19.0.0)
+      next:
+        specifier: ^15.2.3
+        version: 15.2.3(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      next-themes:
+        specifier: ^0.4.4
+        version: 0.4.4(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
+      react:
+        specifier: ^19.0.0
+        version: 19.0.0
+      react-dom:
+        specifier: ^19.0.0
+        version: 19.0.0(react@19.0.0)
+      react-hook-form:
+        specifier: ^7.56.1
+        version: 7.56.1(react@19.0.0)
+      zod:
+        specifier: ^3.24.2
+        version: 3.24.2
+    devDependencies:
+      '@types/node':
+        specifier: ^20
+        version: 20.17.19
+      '@types/react':
+        specifier: ^19
+        version: 19.0.10
+      '@types/react-dom':
+        specifier: ^19
+        version: 19.0.4(@types/react@19.0.10)
+      '@workspace/eslint-config':
+        specifier: workspace:^
+        version: link:../eslint-config
+      '@workspace/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
 
   packages/shared:
     dependencies:

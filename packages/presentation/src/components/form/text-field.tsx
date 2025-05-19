@@ -16,7 +16,6 @@ export interface TextFieldProps extends React.ComponentProps<typeof Input> {
   hideStatus?: boolean;
   label?: React.ReactNode;
   description?: React.ReactNode;
-  showFormMessage?: boolean;
 }
 
 export const TextField = ({
@@ -27,7 +26,6 @@ export const TextField = ({
   hideStatus,
   description,
   placeholder,
-  showFormMessage = true,
   ...rest
 }: TextFieldProps) => {
   const formField = useFormField();
@@ -63,7 +61,7 @@ export const TextField = ({
 
           {description && <FormDescription>{description}</FormDescription>}
 
-          {showFormMessage && <FormMessage />}
+          <FormMessage />
         </FormItem>
       )}
     />
